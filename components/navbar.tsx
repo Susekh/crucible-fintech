@@ -1,0 +1,45 @@
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+
+export default function Navbar() {
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
+          <div className="flex items-center">
+            <div className="text-2xl font-bold text-gray-900">
+              <span className="text-emerald-600">CRUCIBLE</span>
+              <div className="text-sm font-normal text-gray-600 -mt-1">FINTECH</div>
+            </div>
+          </div>
+
+          {/* Navigation Links */}
+          <div className="hidden lg:flex items-center space-x-8">
+            <Link href="#services" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
+              Why us
+            </Link>
+            <Link href="#about" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
+              Solutions
+            </Link>
+            <Link href="#testimonials" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
+              Case Studies
+            </Link>
+            <Link href="#contact" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
+              Pricing
+            </Link>
+          </div>
+
+          {/* CTA Section */}
+          <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-2">
+              <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+              <span className="text-sm font-medium text-gray-700">Available now</span>
+            </div>
+            <Button className="bg-gray-900 text-white hover:bg-gray-800 px-6">Get started</Button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  )
+}
