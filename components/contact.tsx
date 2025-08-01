@@ -8,10 +8,9 @@ export default function Contact() {
     <section id="contact" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">Get In Touch</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Let’s Build Financial Futures Together</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to accelerate your funding journey? Contact our team of fintech experts to discuss your project and
-            funding needs.
+           If you’re launching a financial project or looking to raise capital with the support of reliable technology, Crucible Fintech is your trusted partner.
           </p>
         </div>
 
@@ -76,10 +75,9 @@ export default function Contact() {
             <div className="bg-gray-900 rounded-2xl p-8 text-white">
               <h4 className="text-xl font-bold mb-4">Ready to Get Started?</h4>
               <p className="text-gray-300 mb-6">
-                Schedule a free consultation to discuss your funding needs and learn how we can help accelerate your
-                growth.
+                We welcome inquiries from financial institutions, project developers, government agencies, investors, and innovators seeking to make funding smarter and more efficient.
               </p>
-              <Button className="bg-emerald-600 text-white hover:bg-emerald-700 w-full">
+              <Button className="bg-emerald-600 text-white hover:bg-emerald-700 w-1/2">
                 Schedule Free Consultation
               </Button>
             </div>

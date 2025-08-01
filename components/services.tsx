@@ -1,30 +1,61 @@
-import { DollarSign, BarChart3, Handshake, Target } from "lucide-react"
+import { DollarSign, LayoutGrid, ClipboardCheck, MessageSquare, Building } from "lucide-react"
 
 export default function Services() {
   const services = [
     {
+      icon: LayoutGrid,
+      title: "Project-Based Financial Architecture",
+      description: "We design and implement structured financial systems for projects across industries. Our platforms support lifecycle-based planning, budgeting, and disbursement mechanisms, ensuring efficient capital use and transparency throughout the project.",
+      features: [
+        "Lifecycle-based planning",
+        "Budgeting & disbursement mechanisms",
+        "Efficient capital use",
+        "Project transparency"
+      ],
+    },
+    {
+      icon: ClipboardCheck,
+      title: "Digital Due Diligence & Risk Analysis",
+      description: "Our platform integrates automated risk evaluation tools that streamline compliance and vetting processes. This enables faster approvals, more informed investment decisions, and better risk management across financial portfolios.",
+      features: [
+        "Automated risk evaluation",
+        "Streamlined compliance & vetting",
+        "Faster approvals",
+        "Informed investment decisions"
+      ],
+    },
+    {
       icon: DollarSign,
-      title: "Fundraising Solutions",
-      description: "End-to-end fundraising support from pitch deck creation to investor negotiations.",
-      features: ["Pitch deck optimization", "Investor matching", "Due diligence support", "Term sheet negotiation"],
+      title: "Fundraising Enablement",
+      description: "From private equity and venture capital to public-sector funding, we provide the technical infrastructure that enables seamless capital raising. Our digital tools simplify investor onboarding, track funding progress, and maintain compliance at every stage.",
+      features: [
+        "Seamless capital raising infrastructure",
+        "Simplified investor onboarding",
+        "Funding progress tracking",
+        "Stage-wise compliance"
+      ],
     },
     {
-      icon: BarChart3,
-      title: "Financial Analytics",
-      description: "Advanced analytics and reporting tools to track performance and make data-driven decisions.",
-      features: ["Real-time dashboards", "Performance metrics", "Predictive analytics", "Custom reporting"],
+      icon: MessageSquare,
+      title: "Investor Communication & Management",
+      description: "We offer secure dashboards for investors and stakeholders, enabling real-time updates, performance tracking, document sharing, and financial reporting — building trust through transparency and accessibility.",
+      features: [
+        "Secure investor dashboards",
+        "Real-time updates & performance tracking",
+        "Document sharing & financial reporting",
+        "Transparent stakeholder communication"
+      ],
     },
     {
-      icon: Handshake,
-      title: "Investor Relations",
-      description: "Comprehensive investor relations management to maintain strong stakeholder relationships.",
-      features: ["Investor updates", "Communication tools", "Relationship management", "Compliance tracking"],
-    },
-    {
-      icon: Target,
-      title: "Strategic Planning",
-      description: "Strategic financial planning and advisory services to optimize your growth trajectory.",
-      features: ["Financial modeling", "Growth strategy", "Risk assessment", "Market analysis"],
+      icon: Building,
+      title: "Technology for Public-Private Collaborations",
+      description: "We develop custom digital solutions that support infrastructure and development-based projects through government-private partnerships. Our tech helps in planning, monitoring, and financing projects with efficiency and regulatory alignment.",
+      features: [
+        "Custom solutions for PPPs",
+        "Infrastructure & development project support",
+        "Efficient planning & monitoring",
+        "Regulatory alignment for financing"
+      ],
     },
   ]
 
@@ -32,7 +63,7 @@ export default function Services() {
     <section id="services" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Services</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Core Focus Areas</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Comprehensive fintech solutions designed to accelerate your business growth and funding success.
           </p>

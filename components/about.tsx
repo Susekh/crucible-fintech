@@ -6,14 +6,10 @@ export default function About() {
           <div>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">About CRUCIBLE FINTECH</h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              We are a cutting-edge financial technology company that leverages advanced technology to revolutionize how
-              businesses approach financial projects and fundraising. Our platform connects innovative startups with the
-              right investors while providing the tools and insights needed for successful funding rounds.
+              At <b>Crucible Fintech</b>, we believe that technology can transform how financial projects are executed — from ideation to funding and beyond. Our mission is to bridge the gap between innovation and finance by creating platforms that streamline project financing, facilitate responsible fund management, and ensure transparent investor communication.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              With deep expertise in both technology and finance, we bridge the gap between traditional fundraising
-              methods and modern digital solutions, ensuring our clients achieve their funding goals efficiently and
-              effectively.
+              We focus on building tailored financial ecosystems that support project-based funding, public-private partnerships, social development initiatives, and capital-raising ventures. With a strong foundation in compliance, analytics, and digital automation, we empower organizations to focus on execution while we handle the financial architecture.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
@@ -38,8 +34,7 @@ export default function About() {
           <div className="bg-white rounded-2xl p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Mission</h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              To democratize access to capital by providing innovative fintech solutions that streamline the fundraising
-              process and connect visionary entrepreneurs with forward-thinking investors.
+              To democratize access to capital by providing innovative fintech solutions that streamline the fundraising process and connect visionary entrepreneurs with forward-thinking investors.
             </p>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">

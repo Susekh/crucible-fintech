@@ -16,13 +16,12 @@ export default function Hero() {
         {/* Main Hero Content */}
         <div className="text-center mb-16">
           <h1 className="text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-8">
-            Smart funding
+            Empowering Financial Growth
             <br />
-            for bold ventures
+            Through Technology
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-12 leading-relaxed">
-            We leverage cutting-edge technology to streamline financial projects and connect innovative startups with
-            the right investors.
+            We provide advanced digital tools and financial expertise to simplify, accelerate, and secure financial projects and fundraising for businesses, institutions, and governments.
           </p>
 
           {/* CTA Buttons */}
