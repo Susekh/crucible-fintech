@@ -13,19 +13,19 @@ export default function About() {
             </p>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <div className="text-3xl font-bold text-emerald-600 mb-2">$500M+</div>
+                <div className="text-3xl font-bold text-sky-600 mb-2">$500M+</div>
                 <div className="text-gray-700">Total Funding Raised</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-emerald-600 mb-2">200+</div>
+                <div className="text-3xl font-bold text-sky-600 mb-2">200+</div>
                 <div className="text-gray-700">Successful Projects</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-emerald-600 mb-2">95%</div>
+                <div className="text-3xl font-bold text-sky-600 mb-2">95%</div>
                 <div className="text-gray-700">Success Rate</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-emerald-600 mb-2">50+</div>
+                <div className="text-3xl font-bold text-sky-600 mb-2">50+</div>
                 <div className="text-gray-700">Partner Investors</div>
               </div>
             </div>
@@ -38,8 +38,8 @@ export default function About() {
             </p>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <div className="w-2 h-2 bg-emerald-600 rounded-full"></div>
+                <div className="w-6 h-6 bg-sky-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-2 h-2 bg-sky-600 rounded-full"></div>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Innovation First</h4>
@@ -49,8 +49,8 @@ export default function About() {
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <div className="w-2 h-2 bg-emerald-600 rounded-full"></div>
+                <div className="w-6 h-6 bg-sky-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-2 h-2 bg-sky-600 rounded-full"></div>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Client Success</h4>
@@ -58,8 +58,8 @@ export default function About() {
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <div className="w-2 h-2 bg-emerald-600 rounded-full"></div>
+                <div className="w-6 h-6 bg-sky-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-2 h-2 bg-sky-600 rounded-full"></div>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Transparency</h4>

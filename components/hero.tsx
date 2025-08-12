@@ -1,26 +1,81 @@
+"use client"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { useState, useEffect } from "react"
 
 export default function Hero() {
+  const [currentSlide, setCurrentSlide] = useState(0)
+  
+  // Sample financial/business photos for the carousel
+  const backgroundImages = [
+    "https://images.pexels.com/photos/955395/pexels-photo-955395.jpeg?_gl=1*11vg565*_ga*MTUyNDc3ODY5OS4xNzUzODc4NzQ4*_ga_8JE65Q40S6*czE3NTQ5MDk0NTckbzQkZzEkdDE3NTQ5MDk0NzYkajQxJGwwJGgw",
+    "https://images.pexels.com/photos/128867/coins-currency-investment-insurance-128867.jpeg",
+    "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg",
+  ]
+
+  // Auto-advance carousel
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % backgroundImages.length)
+    }, 5000) // Change slide every 5 seconds
+
+    return () => clearInterval(interval)
+  }, [backgroundImages.length])
+
   return (
-    <section className="pt-20 pb-16 bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="pt-20 pb-16 relative overflow-hidden">
+      {/* Background Carousel */}
+      <div className="absolute inset-0 z-0">
+        {backgroundImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentSlide ? 'opacity-70' : 'opacity-0'
+            }`}
+          >
+            <div 
+              className="w-full h-full bg-cover bg-center bg-no-repeat"
+              style={{
+                backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)), url('${image}')`
+              }}
+            />
+          </div>
+        ))}
+        
+        {/* Carousel indicators */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+          {backgroundImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                index === currentSlide 
+                  ? 'bg-gray-900 scale-110' 
+                  : 'bg-gray-400 hover:bg-gray-600'
+              }`}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Content overlay */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         {/* Announcement Banner */}
-        <div className="text-center mb-12">
+        {/* <div className="text-center mb-12">
           <div className="inline-flex items-center bg-gray-900 text-white px-4 py-2 rounded-full text-sm font-medium">
             <span className="bg-white text-gray-900 px-2 py-1 rounded-full text-xs font-bold mr-3">New</span>
             We have launched our funding platform →
           </div>
-        </div>
+        </div> */}
 
         {/* Main Hero Content */}
         <div className="text-center mb-16">
-          <h1 className="text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-8">
+          <h1 className="text-6xl lg:text-7xl pt-12 font-bold text-gray-900 leading-tight mb-8 drop-shadow-lg">
             Empowering Financial Growth
             <br />
             Through Technology
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="text-xl text-gray-800 max-w-2xl mx-auto mb-12 leading-relaxed drop-shadow-md font-medium">
             We provide advanced digital tools and financial expertise to simplify, accelerate, and secure financial projects and fundraising for businesses, institutions, and governments.
           </p>
 
@@ -83,12 +138,12 @@ export default function Hero() {
         </div>
 
         {/* Hero Image/Dashboard Mockup */}
-        <div className="bg-emerald-500 rounded-3xl p-12 relative overflow-hidden">
+        <div className="bg-sky-500 rounded-3xl p-12 relative overflow-hidden">
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl shadow-2xl p-8 transform rotate-1">
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-8 h-8 bg-emerald-500 rounded-lg"></div>
+                  <div className="w-8 h-8 bg-sky-500 rounded-lg"></div>
                   <span className="font-semibold text-gray-900">CRUCIBLE Dashboard</span>
                 </div>
                 <div className="flex space-x-2">
@@ -105,10 +160,10 @@ export default function Hero() {
                     <div className="bg-gray-50 rounded-lg p-4">
                       <div className="flex justify-between items-center mb-2">
                         <span className="text-sm text-gray-600">Total Raised</span>
-                        <span className="font-bold text-emerald-600">$2.4M</span>
+                        <span className="font-bold text-sky-600">$2.4M</span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2">
-                        <div className="bg-emerald-500 h-2 rounded-full" style={{ width: "75%" }}></div>
+                        <div className="bg-sky-500 h-2 rounded-full" style={{ width: "75%" }}></div>
                       </div>
                     </div>
 
@@ -131,8 +186,8 @@ export default function Hero() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Recent Activity</h3>
                   <div className="space-y-3">
                     <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
-                      <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center">
-                        <svg className="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                      <div className="w-8 h-8 bg-sky-100 rounded-full flex items-center justify-center">
+                        <svg className="w-4 h-4 text-sky-600" fill="currentColor" viewBox="0 0 20 20">
                           <path
                             fillRule="evenodd"
                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"

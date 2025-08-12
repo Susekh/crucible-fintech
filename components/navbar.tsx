@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("")
@@ -48,8 +49,9 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <div className="text-2xl font-bold text-gray-900">
-              <span className="text-emerald-600">CRUCIBLE</span>
-              <div className="text-sm font-normal text-gray-600 -mt-1">FINTECH</div>
+              {/* <span className="text-sky-600">CRUCIBLE</span>
+              <div className="text-sm font-normal text-gray-600 -mt-1">FINTECH</div> */}
+              <Image height={70} width={70} src={"/favicon.png"} alt="crucible fintech" />
             </div>
           </div>
 
@@ -58,7 +60,7 @@ export default function Navbar() {
             <Link 
               href="#features" 
               className={`font-medium transition-colors ${
-                activeSection === "features" ? "text-emerald-600" : "text-gray-700 hover:text-gray-900"
+                activeSection === "features" ? "text-sky-600" : "text-gray-700 hover:text-gray-900"
               }`}
             >
               Why us
@@ -66,7 +68,7 @@ export default function Navbar() {
             <Link 
               href="#services" 
               className={`font-medium transition-colors ${
-                activeSection === "services" ? "text-emerald-600" : "text-gray-700 hover:text-gray-900"
+                activeSection === "services" ? "text-sky-600" : "text-gray-700 hover:text-gray-900"
               }`}
             >
               Solutions
@@ -74,7 +76,7 @@ export default function Navbar() {
             <Link 
               href="#about" 
               className={`font-medium transition-colors ${
-                activeSection === "about" ? "text-emerald-600" : "text-gray-700 hover:text-gray-900"
+                activeSection === "about" ? "text-sky-600" : "text-gray-700 hover:text-gray-900"
               }`}
             >
               About
@@ -82,7 +84,7 @@ export default function Navbar() {
             <Link 
               href="#contact" 
               className={`font-medium transition-colors ${
-                activeSection === "contact" ? "text-emerald-600" : "text-gray-700 hover:text-gray-900"
+                activeSection === "contact" ? "text-sky-600" : "text-gray-700 hover:text-gray-900"
               }`}
             >
               Contact
@@ -92,7 +94,7 @@ export default function Navbar() {
           {/* CTA Section */}
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
+              <div className="w-2 h-2 bg-sky-500 rounded-full"></div>
               <span className="text-sm font-medium text-gray-700">Available now</span>
             </div>
             <Button className="bg-gray-900 text-white hover:bg-gray-800 px-6">Get started</Button>

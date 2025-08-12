@@ -72,15 +72,15 @@ export default function Services() {
         <div className="grid lg:grid-cols-2 gap-12">
           {services.map((service, index) => (
             <div key={index} className="bg-gray-50 rounded-2xl p-8">
-              <div className="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">
-                <service.icon className="h-8 w-8 text-emerald-600" />
+              <div className="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mb-6">
+                <service.icon className="h-8 w-8 text-sky-600" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
               <ul className="space-y-3">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center text-gray-700">
-                    <div className="w-2 h-2 bg-emerald-500 rounded-full mr-3"></div>
+                    <div className="w-2 h-2 bg-sky-500 rounded-full mr-3"></div>
                     {feature}
                   </li>
                 ))}

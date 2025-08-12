@@ -44,8 +44,8 @@ export default function Features() {
           {features.map((feature, index) => (
             <div key={index} className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow">
               {/* Reverted icon margin to mb-6 */}
-              <div className="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">
-                <feature.icon className="h-8 w-8 text-emerald-600" />
+              <div className="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mb-6">
+                <feature.icon className="h-8 w-8 text-sky-600" />
               </div>
               {/* Reverted title margin to mb-4 */}
               <h3 className="text-xl font-bold text-gray-900 mb-4">{feature.title}</h3>

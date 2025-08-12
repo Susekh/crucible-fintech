@@ -72,12 +72,12 @@ export default function Testimonials() {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="bg-emerald-50 rounded-2xl p-12 inline-block">
+          <div className="bg-sky-50 rounded-2xl p-12 inline-block">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Join Our Success Stories?</h3>
             <p className="text-gray-600 mb-8 max-w-2xl">
               Let us help you navigate your funding journey and connect with the right investors for your business.
             </p>
-            <button className="bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors">
+            <button className="bg-sky-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-sky-700 transition-colors">
               Start Your Funding Journey
             </button>
           </div>

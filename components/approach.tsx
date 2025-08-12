@@ -38,8 +38,8 @@ export default function Approach() {
         <div className="grid md:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="text-center relative">
-              <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <step.icon className="h-10 w-10 text-emerald-600" />
+              <div className="w-20 h-20 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <step.icon className="h-10 w-10 text-sky-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">{step.title}</h3>
               <p className="text-gray-600 leading-relaxed">{step.description}</p>
@@ -63,13 +63,13 @@ export default function Approach() {
           ))}
         </div>
 
-        <div className="mt-16 bg-emerald-50 rounded-3xl p-12 text-center">
+        <div className="mt-16 bg-sky-50 rounded-3xl p-12 text-center">
           <h3 className="text-3xl font-serif text-gray-900 mb-6">Ready to Start Your Sustainability Journey?</h3>
           <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
             Let us help you develop a comprehensive sustainability strategy that aligns with your business objectives
             and contributes to global climate goals.
           </p>
-          <button className="bg-emerald-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-600 transition-colors">
+          <button className="bg-sky-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-sky-600 transition-colors">
             Schedule Your Consultation
           </button>
         </div>

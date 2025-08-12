@@ -23,6 +23,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <>
+     <head>
+        <link rel="icon" href="/favicon.png" sizes="any" />
+      </head>
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -30,5 +34,6 @@ export default function RootLayout({
         {children}
       </body>
     </html>
+    </>
   );
 }
